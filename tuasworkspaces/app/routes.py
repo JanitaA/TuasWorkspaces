@@ -325,22 +325,3 @@ def meetingparticipants():
             participants.append(f'partner {Businesspartner.query.filter_by(id=part.partnerId).first().name} from {Businesspartner.query.filter_by(id=part.partnerId).first().representing}')
         return render_template('meetingparticipants.html',title='Meeting Participants',meetingtitle=meeting.title,participants=participants)
     return render_template('meetingparticipantscheck.html',title='Meeting Participants',form=form)
-
-@app.route('/costs',methods=['GET','POST'])
-def costs():
-    form=CostaccruedForm()
-    if form.validate_on_submit():
-        costlogs=CostLog.query.filter(CostLog.date>=datetime.combine(form.startdate.data,datetime.min.time())).filter(CostLog.date<=datetime.combine(form.enddate.data,datetime.min.time())).all()
-        teams=list(set([costlog.teamName for costlog in costlogs]))
-        teamcosts=[]
-        # slow implementation, can be optimized
-        for team in teams:
-            teamcost=dict()
-            teamcost['teamName']=team
-            teamcost['total']=0
-            for costlog in costlogs:
-                if costlog.teamName==team:
-                    teamcost['total']+=costlog.cost
-            teamcosts.append(teamcost)
-        return render_template('costs.html',title='Cost Accrued',startdate=form.startdate.data,enddate=form.enddate.data,teamcosts=teamcosts)
-    return render_template('costcheck.html',title='Cost Accrued check',form=form)
