@@ -1,44 +1,14 @@
-A toy room booking system
+TUAS Workspace reservation
 =====
-The web application is build with python Flask framwork along with SQLite3 database. It has basic login system since the booking have to be done with authentication. A admin account is created by default, with username: admin, and password: admin. The administrator have the access to directly manipulate team and users. 
+This application is a group work for the Sovellusprojekti-course.
 
-## Requirements
-1. Python 3.6, recommending [Anaconda](https://anaconda.org/anaconda/python)
-2. Install SQLite3 from [Here](http://www.sqlite.org/download.html)
-3. Recommend SQLite browser [Available](http://sqlitebrowser.org/)
+The aim for this group work is to create a Flask based web service by using Python and RESTful API.
 
-## Setup
-1. Install flask and packages
-```
-$ pip install flask
-$ pip install flask-wtf
-$ pip install flask-sqlalchemy
-$ pip install flask-migrate
-$ pip install flask-login
-```
-2. Define the project
-```
-$ export FLASK_APP=lab2.py
-```
+A web service shortly described:
 
-3. Init the database
-```
-$ flask db init
-```
+"TUAS  has  a  lot  of  free  workspaces  after  16  and  before  21  o’clock  during  weekdays.  Auditoriums,  meeting rooms,  classrooms  etc.  A web  serviceis  needed  where  a  client  can createor  cancel  a  reservation  for  a workspace.A  client  can  be  anyone,  even outside  TUAS. It should  also  be  possible  to  add, edit  and  delete clients and workspacesinto the system. Of course, the clients themselves should not be able to create, edit or change the workspaces. For reasons of privacy, they also should not be able to  view, edit or delete the information  of  the  other  clients.Listings  of  clients,  workspaces  and  reservations  should  be  available.  The system  should  watch  over  that  duplicate  reservations  are  not  possible.Itshould  also  keep  record  of  data creation dates and times, as well as the dates and times of last modifications."
 
-## Migrating data
-1. Run the migration command from the project directory to create tables
-```
-$ flask db upgrade
-```
-2. Populate the database with dummy data(if weren't populated after migration)
-```
-$ python populate.py
-```
 
-# Running
-1. Run the flask application from the project directory, running on localhost
-```
-$ flask run
-```
-2. Open the app in browser: [localhost](http://127.0.0.1:5000/)
+// It has basic login system since the booking have to be done with authentication. A admin account is created by default, with username: admin, and password: admin. The administrator have the access to directly manipulate team and users. //
+
+// Open the app in browser: http://127.0.0.1:5000/ //
