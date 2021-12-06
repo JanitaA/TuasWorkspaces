@@ -2,7 +2,7 @@ body {
   margin: 40px;
   padding: 0;
   font-family: "Helvetica Nee", Helvetica, Arial, sans-serif;
-  color: #444;
+  color: #black;
   text-align: center;
   background-color: #d3c93f;
 }
@@ -35,4 +35,14 @@ a:link {
 a:visited {
   color: black;
   font-size: 2em;
+}
+
+a.textlink {
+  color: #black;
+  font-size: 1em;
+}
+
+p {
+color: #black;
+font-size: 1em;
 }

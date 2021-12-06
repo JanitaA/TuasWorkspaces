@@ -4,7 +4,7 @@
 {% block content %}
 {% if current_user.is_anonymous %}
 <h1>TUAS workspace reservation</h1>
-<p>Here you can reserve workspace. All you need to do is to <a href="{{ url_for('login') }}">log in</a> and choose best time and workspace that is suitable for you.</p>
+<p>Here you can reserve workspace. All you need to do is to <a class="textlink" href="{{ url_for('login') }}">log in</a> and choose best time and workspace that is suitable for you.</p>
 {% else %}
 <h1>Hi, {{ current_user.username }}!</h1>
 {% endif %}
