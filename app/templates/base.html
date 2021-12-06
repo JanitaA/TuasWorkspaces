@@ -23,12 +23,7 @@
             <a href="{{ url_for('cancelbooking')}}">Cancel Booking</a>
             <a href="{{ url_for('roomavailable')}}">Room Availability</a>
             <a href="{{ url_for('roomoccupation')}}">Room Status</a>
-            <a href="{{ url_for('meetingbooker')}}">Meetings</a>
             <a href="{{ url_for('meetingparticipants')}}">Participants</a>
-            <a href="{{ url_for('addteam')}}">Add Team</a>
-            <a href="{{ url_for('adduser')}}">Add User</a>
-            <a href="{{ url_for('deleteteam')}}">Delete Team</a>
-            <a href="{{ url_for('deleteuser')}}">Delete User</a>
             {% if current_user.is_authenticated %}
             <div align="right">Log in as: {{current_user.fullname}}</div>
             {% endif %}
