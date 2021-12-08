@@ -32,19 +32,27 @@
             <a href="{{ url_for('cancelbooking')}}">
                 <span class="button">Cancel Booking</span>
             </a>
-            {% endif %}
             <a href="{{ url_for('roomavailable')}}">
                 <span class="button">Room Availability</span>
             </a>
             <a href="{{ url_for('roomoccupation')}}">
                 <span class="button">Room Status</span>
             </a>
-            {% if current_user.is_authenticated %}
             <a href="{{ url_for('meetingparticipants')}}">
                 <span class="button">Participants</span>
             </a>
             <div align="right">Log in as: {{current_user.fullname}}</div>
             {% endif %}
+
+            {% if current_user.is_admin %}
+            <a href="{{ url_for('adduser')}}">
+                <span class="button">Add user</span>
+            </a>
+            <a href="{{ url_for('deleteuser')}}">
+                <span class="button">Delete user</span>
+            </a>
+            {% endif %}
+
         </div>
         
         <hr>
