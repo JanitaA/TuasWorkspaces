@@ -1,10 +1,10 @@
 app
     > static
         > css
-            > main.css (css-tiedosto löytyy täältä)
+            > main.css                  (css-tiedosto löytyy täältä)
 
-    > templates (html-sivut)
-        > _formhelpers (??)
+    > templates                         (html-sivut)
+        > _formhelpers                  (??)
         > addteam                       (lisää uusi tiimi)
         > adduser                       (lisää uusi käyttäjä)
         > allrecords                    (???)
@@ -19,29 +19,29 @@ app
         > meetingparticipants           (???)
         > meetingparticipantscheck      (???)
         > register                      (rekisteröinti)
-        > roomavailablelist
-        > roomoccupation
-        > roomoccupationlist
+        > roomavailablelist             (listaus saatavilla olevista huoneista)
+        > roomoccupation                (huoneiden tilanne)
+        > roomoccupationlist            (listaus huoneiden tilanteesta?)
 
-    __init__.py
-    forms.py
-    models.py
-    routes.py
+    __init__.py                         (???)
+    forms.py                            (???)
+    models.py                           (???)
+    routes.py                           (???)
 
-    > migrations
+    > migrations                        (liittyy databaseen)
         > versions
-            > 7d3d42af6b2e_.py              (poistettu)
-        alembic.ini                         (???)
-        env.py
-        README
-        script.py.mako
+            > 7d3d42af6b2e_.py          (versioselostus)
+        alembic.ini                     (???)
+        env.py                          (???)
+        README                          (readme)
+        script.py.mako                  (??)
 
     gitignore
-    config.py
-    info.txt                                (tämä info :D)
-    lab2.db                                 (database-tiedosto)
-    lab2.py                                 (the app)
-    populate.py                             (löytyy mm. käyttäjätiedot, huoneet)
-    README.md                               (readme-tiedosto)
-    test.py                                 (??)
+    config.py                           (??)
+    info.txt                            (tämä info :D)
+    lab2.db                             (database-tiedosto)
+    lab2.py                             (the app)
+    populate.py                         (löytyy mm. käyttäjätiedot, huoneet)
+    README.md                           (readme-tiedosto)
+    test.py                             (??)
 
