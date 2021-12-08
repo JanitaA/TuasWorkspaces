@@ -30,15 +30,17 @@ h3 {
 a:link {
   color: black;
   font-size: 2em;
+  text-decoration: none;
 }
 
 a:visited {
   color: black;
   font-size: 2em;
+  text-decoration: none;
 }
 
 a.textlink {
-  color: #black;
+  color: black;
   font-size: 1em;
 }
 
