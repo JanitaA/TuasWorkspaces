@@ -1,0 +1,47 @@
+app
+    > static
+        > css
+            > main.css (css-tiedosto löytyy täältä)
+
+    > templates (html-sivut)
+        > _formhelpers (??)
+        > addteam                       (lisää uusi tiimi)
+        > adduser                       (lisää uusi käyttäjä)
+        > allrecords                    (???)
+        > base                          (muokkaa mm. yläheaderi)
+        > book                          (varaa tapaaminen)
+        > cancelbooking                 (peru tapaaminen)
+        > deleteteam                    (poista tiimi)
+        > deleteuser                    (poista käyttäjä)
+        > index                         (etusivu)
+        > login                         (kirjautumissivu)
+        > meetingbooker                 (???)
+        > meetingparticipants           (???)
+        > meetingparticipantscheck      (???)
+        > register                      (rekisteröinti)
+        > roomavailablelist
+        > roomoccupation
+        > roomoccupationlist
+
+    __init__.py
+    forms.py
+    models.py
+    routes.py
+
+    > migrations
+        > versions
+            > 7d3d42af6b2e_.py
+        alembic.ini
+        env.py
+        README
+        script.py.mako
+
+    gitignore
+    config.py
+    info.txt (tämä info :D)
+    lab2.db
+    lab2.py (the app)
+    populate.py (löytyy mm. käyttäjätiedot, huoneet)
+    README.md (readme-tiedosto)
+    test.py (??)
+
