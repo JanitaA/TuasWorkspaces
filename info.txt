@@ -30,18 +30,18 @@ app
 
     > migrations
         > versions
-            > 7d3d42af6b2e_.py
-        alembic.ini
+            > 7d3d42af6b2e_.py              (poistettu)
+        alembic.ini                         (???)
         env.py
         README
         script.py.mako
 
     gitignore
     config.py
-    info.txt (tämä info :D)
-    lab2.db
-    lab2.py (the app)
-    populate.py (löytyy mm. käyttäjätiedot, huoneet)
-    README.md (readme-tiedosto)
-    test.py (??)
+    info.txt                                (tämä info :D)
+    lab2.db                                 (database-tiedosto)
+    lab2.py                                 (the app)
+    populate.py                             (löytyy mm. käyttäjätiedot, huoneet)
+    README.md                               (readme-tiedosto)
+    test.py                                 (??)
 
